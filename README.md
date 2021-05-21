@@ -18,7 +18,7 @@ Please check at the end of each slide.
 ### QGISでのベクトルタイル表示 / Using Vector Tile in QGIS
 QGISでのベクトルタイルの表示方法です。（ベクトルタイル一般）  
 Explaines how to display vector tile in QGIS (not limited to UNVT.)  
-[スライド英語版](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-english)/[スライド日本語版](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-japanese)
+[スライド日本語版](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-japanese) / [Slide in English](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-english)
 
 ### Docker(unvt/nanban)を使ったベクトルタイル変換 / Vector Tile production using unvt/nanban (Docker)
 作業中 / being preprared
