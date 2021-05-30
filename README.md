@@ -21,7 +21,8 @@ Explaines how to display vector tile in QGIS (not limited to UNVT.)
 [スライド日本語版](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-japanese) / [Slide in English](https://speakerdeck.com/ubukawa/2021-05-20-vector-tile-in-qgis-in-english)
 
 ### Docker(unvt/nanban)を使ったベクトルタイル変換 / Vector Tile production using unvt/nanban (Docker)
-作業中 / being preprared
+スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-05-28-vector-tile-conversion-with-doker-unvt-nanban)
+
 
 
 ### その他作業中 / more will come
