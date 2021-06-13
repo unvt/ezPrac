@@ -26,6 +26,10 @@ Explaines how to display vector tile in QGIS (not limited to UNVT.)
 ###  日本語（作業中）/ Report of my trial of "storytelling" with UNVT
 スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-06-07-storytelling-trial-report)
 
+###  日本語（作業中）/ UNVT Casual Exercise - Day 1
+スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-06-14-unvt-exercise-day01)
+
+
 ### その他作業中 / more will come
 
 
