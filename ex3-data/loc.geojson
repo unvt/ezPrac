@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "location",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "name": "UNGIS", "location": "New York" }, "geometry": { "type": "Point", "coordinates": [ -73.972275234474168, 40.75363635308198 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "name": "UNGSC", "location": "Brindisi" }, "geometry": { "type": "Point", "coordinates": [ 17.944816131063018, 40.651545250026842 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "name": "UNMISS", "location": "Juba" }, "geometry": { "type": "Point", "coordinates": [ 31.581076497072765, 4.848613161175209 ] } }
+]
+}

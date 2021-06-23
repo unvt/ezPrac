@@ -1,0 +1,66 @@
+{
+  "version": 8,
+  "name": "MyStyle",
+  "metadata": {"maputnik:renderer": "mbgljs"},
+  "sources": {
+    "v": {
+      "type": "vector",
+      "tiles": ["https://ubukawa.github.io/VT-test-0614/myVT/{z}/{x}/{y}.pbf"],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "maxzoom": 3
+    }
+  },
+  "sprite": "https://ubukawa.github.io/VT-test-0614/sprite/sprite",
+  "glyphs": "https://ubukawa.github.io/VT-test-0614/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "maxzoom": 3,
+      "paint": {"background-color": "rgba(118, 217, 255, 1)"}
+    },
+    {
+      "id": "landmass",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "landmass",
+      "maxzoom": 3,
+      "paint": {"fill-color": "rgba(127, 255, 198, 1)"}
+    },
+    {
+      "id": "coastl",
+      "type": "line",
+      "source": "v",
+      "source-layer": "coastl",
+      "maxzoom": 3,
+      "paint": {"line-color": "rgba(36, 0, 161, 1)", "line-width": 0.5}
+    },
+    {
+      "id": "loc",
+      "type": "symbol",
+      "source": "v",
+      "source-layer": "loc",
+      "maxzoom": 3,
+      "layout": {
+        "icon-image": "public_building",
+        "text-field": "{name}",
+        "text-font": ["sans"],
+        "text-size": 12,
+        "text-offset": [1, 1]
+      }
+    },
+    {
+      "id": "popp",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "popp",
+      "maxzoom": 3,
+      "paint": {
+        "circle-color": "rgba(149, 149, 149, 1)",
+        "circle-radius": {"stops": [[1, 1], [2, 3]]}
+      }
+    }
+  ],
+  "id": "ui6vrrrk3"
+}

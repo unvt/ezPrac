@@ -1,0 +1,33 @@
+{
+  "name": "style-editing",
+  "version": "1.0.0",
+  "description": "work place",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubukawa/style-editing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "https://github.com/ubukawa/style-editing#LICENSE",
+  "bugs": {
+    "url": "https://github.com/ubukawa/style-editing/issues"
+  },
+  "homepage": "https://github.com/ubukawa/style-editing#readme",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.10.0",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "hh-mm-ss": "^1.2.0",
+    "hjson": "^3.1.2",
+    "morgan": "^1.9.1",
+    "spdy": "^4.0.0",
+    "sqlite3": "^4.2.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.6.0"
+  }
+}

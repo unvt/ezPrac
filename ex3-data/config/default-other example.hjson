@@ -1,0 +1,28 @@
+{
+  minzoom: 0
+  maxzoom: 2
+  srcs: [
+    {
+      url: bnda_rob.geojson
+      layer: bnda
+      minzoom: 0 
+      maxzoom: 2
+    }
+    {
+      url: bndl_rob.geojson
+      layer: bndl
+      minzoom: 0
+      maxzoom: 2
+    }
+    {
+      url: bndp_rob.geojson
+      layer: bndp
+      minzoom: 0
+      maxzoom: 2
+    }
+  ]
+  ogr2ogrPath: ogr2ogr
+  tippecanoePath: tippecanoe
+  dstDir: zxy
+}
+

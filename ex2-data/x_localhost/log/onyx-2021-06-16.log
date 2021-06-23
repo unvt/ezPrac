@@ -1,0 +1,5 @@
+{"message":"GET /hello.html 200 378 - 8.408 ms","level":"info"}
+{"message":"GET /index.html 200 935 - 1.613 ms","level":"info"}
+{"message":"GET /mapbox-gl_r.css 200 34825 - 3.348 ms","level":"info"}
+{"message":"GET /mapbox-gl.js 200 745112 - 1.623 ms","level":"info"}
+{"message":"GET /style.json 200 30 - 1.914 ms","level":"info"}

@@ -1,0 +1,22 @@
+{
+  minzoom: 0
+  maxzoom: 3
+  srcs: [
+    {
+      url: loc.geojson
+      layer: loc
+      minzoom: 0 
+      maxzoom: 3
+    }
+    {
+      url: location.shp
+      layer: loc-shp
+      minzoom: 0
+      maxzoom: 3
+    }
+  ]
+  ogr2ogrPath: ogr2ogr
+  tippecanoePath: tippecanoe
+  dstDir: zxy
+}
+
