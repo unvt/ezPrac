@@ -1,0 +1,11 @@
+{
+ morganFormat: tiny
+ htdocsPath: htdocs
+ privkeyPath: ./somewhere/privkey.pem 
+ fullchainPath: ./somewhere/cert.pem
+ chainPath: ./somewhere/nonono.pem
+ logDirPath: log
+ port: 8836
+ mbtilesDir: mbtiles
+}
+
