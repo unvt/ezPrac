@@ -1,5 +1,5 @@
 {
-  "name": "style-editing",
+  "name": "ex-4",
   "version": "1.0.0",
   "description": "work place",
   "main": "app.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ubukawa/style-editing.git"
+    "url": "git+https://github.com/unvt/ezPrac.git"
   },
   "keywords": [],
   "author": "",
-  "license": "https://github.com/ubukawa/style-editing#LICENSE",
+  "license": "https://github.com/unvt/ezPrac#LICENSE",
   "bugs": {
-    "url": "https://github.com/ubukawa/style-editing/issues"
+    "url": "https://github.com/unvt/ezPrac/issues"
   },
-  "homepage": "https://github.com/ubukawa/style-editing#readme",
+  "homepage": "https://github.com/unvt/ezPrac#readme",
   "dependencies": {
     "@mapbox/mbtiles": "^0.10.0",
     "config": "^3.0.1",

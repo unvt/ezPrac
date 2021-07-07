@@ -1,0 +1,2 @@
+The clearmap-test.mbtiles is just for the purpose of the UNVT exercise.
+This data contains internal contents, so please do not further disseminate.

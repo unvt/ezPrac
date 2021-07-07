@@ -1,0 +1,1564 @@
+{
+  "center": [
+    0,
+    0
+  ],
+  "glyphs": "http://localhost:8836/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "paint": {
+        "background-color": "#D6EBF5"
+      },
+      "type": "background"
+    },
+    {
+      "id": "pg-landmass",
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "fill-color": "#FCFCFA"
+      },
+      "source": "v",
+      "source-layer": "landmass",
+      "type": "fill"
+    },
+    {
+      "id": "pg-ocean",
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "fill-color": "#D5EBF5"
+      },
+      "source": "v",
+      "source-layer": "ocean",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          0
+        ]
+      ],
+      "id": "ls-coastline",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [
+              3,
+              0.25
+            ],
+            [
+              4,
+              0.4
+            ],
+            [
+              18,
+              0.8
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "perenniality",
+          1
+        ]
+      ],
+      "id": "pg-wbya10",
+      "maxzoom": 6,
+      "paint": {
+        "fill-color": "#DFEFF7"
+      },
+      "source": "v",
+      "source-layer": "wbya10",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "gridcode",
+          80
+        ]
+      ],
+      "id": "pg-urban",
+      "maxzoom": 6,
+      "minzoom": 3,
+      "paint": {
+        "fill-color": "#E6E6E1"
+      },
+      "source": "v",
+      "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "type",
+          1
+        ],
+        [
+          "==",
+          "perenniality",
+          1
+        ]
+      ],
+      "id": "ls-dral10",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "paint": {
+        "line-color": "rgba(157,189,209,0.7)",
+        "line-width": {
+          "stops": [
+            [
+              3,
+              0.4
+            ],
+            [
+              4,
+              0.5
+            ],
+            [
+              5,
+              0.6
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "dral10",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          8
+        ]
+      ],
+      "id": "ls-adm-autonomous-halo",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 4.89,
+      "paint": {
+        "line-color": "rgba(230, 230, 223, 0.65)",
+        "line-dasharray": [
+          7.93333,
+          4.93333
+        ],
+        "line-width": 4.09
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "bdytyp",
+          1
+        ],
+        [
+          "==",
+          "bdytyp",
+          2
+        ],
+        [
+          "==",
+          "bdytyp",
+          3
+        ],
+        [
+          "==",
+          "bdytyp",
+          4
+        ]
+      ],
+      "id": "ls-adm-ISAO-halo",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 3.89,
+      "paint": {
+        "line-color": "rgba(230, 230, 223, 0.65)",
+        "line-width": {
+          "stops": [
+            [
+              3,
+              3.5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4.3
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          8
+        ]
+      ],
+      "id": "ls-adm-autonomous",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 4.89,
+      "paint": {
+        "line-color": "#7D868C",
+        "line-dasharray": [
+          7.93333,
+          4.93333
+        ],
+        "line-width": 1
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          4
+        ]
+      ],
+      "id": "ls-adm-other",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              3,
+              "#737C80"
+            ],
+            [
+              4,
+              "#454A4C"
+            ],
+            [
+              5,
+              "#505659"
+            ]
+          ]
+        },
+        "line-dasharray": {
+          "stops": [
+            [
+              3,
+              [
+                1,
+                3
+              ]
+            ],
+            [
+              4,
+              [
+                1,
+                5
+              ]
+            ]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0.2
+            ],
+            [
+              2,
+              0.3
+            ],
+            [
+              3,
+              0.6
+            ],
+            [
+              4,
+              0.8
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          3
+        ]
+      ],
+      "id": "ls-adm-armistice",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              3,
+              "#737C80"
+            ],
+            [
+              4,
+              "#454A4C"
+            ],
+            [
+              5,
+              "#505659"
+            ]
+          ]
+        },
+        "line-dasharray": {
+          "stops": [
+            [
+              3,
+              [
+                8,
+                5
+              ]
+            ],
+            [
+              4,
+              [
+                12,
+                5
+              ]
+            ]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0.2
+            ],
+            [
+              2,
+              0.3
+            ],
+            [
+              3,
+              0.6
+            ],
+            [
+              4,
+              0.666667
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          2
+        ]
+      ],
+      "id": "ls-adm-special",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              3,
+              "#737B80"
+            ],
+            [
+              4,
+              "#454A4C"
+            ],
+            [
+              5,
+              "#505659"
+            ]
+          ]
+        },
+        "line-dasharray": {
+          "stops": [
+            [
+              3,
+              [
+                6,
+                3
+              ]
+            ],
+            [
+              4,
+              [
+                3.8,
+                3
+              ]
+            ]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0.2
+            ],
+            [
+              2,
+              0.3
+            ],
+            [
+              3,
+              0.6
+            ],
+            [
+              4,
+              0.666667
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "bdytyp",
+          1
+        ]
+      ],
+      "id": "ls-adm-international",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              3,
+              "#737B80"
+            ],
+            [
+              4,
+              "#454A4C"
+            ],
+            [
+              5,
+              "#505659"
+            ]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [
+              0,
+              0.2
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              4,
+              0.5
+            ],
+            [
+              5,
+              0.666667
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "poptyp",
+          3
+        ]
+      ],
+      "id": "pt-place-capitals3",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": "PPL_Territorial",
+        "icon-size": 1,
+        "text-allow-overlap": true,
+        "text-field": "{cartolb}",
+        "text-font": [
+          "sans"
+        ],
+        "text-offset": [
+          1,
+          1
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              9.1
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 3.89,
+      "paint": {
+        "text-color": "#3E3F40",
+        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-halo-width": {
+          "stops": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1.13
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "un_popp",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "poptyp",
+          2
+        ]
+      ],
+      "id": "pt-place-capitals2",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": "PPL_Alternative",
+        "icon-size": 1,
+        "text-allow-overlap": true,
+        "text-field": "{cartolb}",
+        "text-font": [
+          "sans"
+        ],
+        "text-offset": [
+          1,
+          1
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              9.1
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 3.89,
+      "paint": {
+        "text-color": "#3E3F40",
+        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-halo-width": {
+          "stops": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1.13
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "un_popp",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "poptyp",
+          1
+        ]
+      ],
+      "id": "pt-place-capitals1",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": "PPL_National",
+        "icon-size": 1,
+        "text-allow-overlap": true,
+        "text-field": "{cartolb}",
+        "text-font": [
+          "sans"
+        ],
+        "text-offset": [
+          1,
+          1
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              9.1
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 3.89,
+      "paint": {
+        "text-color": "#3E3F40",
+        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-halo-width": {
+          "stops": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1.13
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "un_popp",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          7
+        ]
+      ],
+      "id": "pt-lab-cty-ita",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 1.56,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              3,
+              "#6E7780"
+            ],
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(255,255,255,0.25)"
+            ],
+            [
+              3,
+              "rgba(255,255,255,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          4
+        ]
+      ],
+      "id": "pt-lab-cty-ant",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 1.56,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              3,
+              "#6E7780"
+            ],
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(255,255,255,0.25)"
+            ],
+            [
+              3,
+              "rgba(255,255,255,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          8
+        ]
+      ],
+      "id": "pt-lab-cty-reg2",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "sans"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 5,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              3,
+              "#6E7780"
+            ],
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(255,255,255,0.25)"
+            ],
+            [
+              3,
+              "rgba(255,255,255,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          2
+        ],
+        [
+          "==",
+          "annotationclassid",
+          5
+        ],
+        [
+          "==",
+          "annotationclassid",
+          6
+        ]
+      ],
+      "id": "pt-lab-cty-reg1",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "sans"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 1.56,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              3,
+              "#6E7780"
+            ],
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(255,255,255,0.25)"
+            ],
+            [
+              3,
+              "rgba(255,255,255,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          0
+        ],
+        [
+          "==",
+          "annotationclassid",
+          1
+        ],
+        [
+          "==",
+          "annotationclassid",
+          3
+        ]
+      ],
+      "id": "pt-lab-cty-bold",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Bold"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 1.56,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              3,
+              "#6E7780"
+            ],
+            [
+              4,
+              "#636566"
+            ],
+            [
+              5,
+              "#575859"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(255,255,255,0.25)"
+            ],
+            [
+              3,
+              "rgba(255,255,255,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          6
+        ]
+      ],
+      "id": "pt-lab-water-island",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              9.3
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 4,
+      "paint": {
+        "text-color": "#717E85",
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(206,228,242,0.7)"
+            ],
+            [
+              3,
+              "rgba(237,247,252,0.6)"
+            ]
+          ]
+        },
+        "text-halo-width": 0.733
+      },
+      "source": "v",
+      "source-layer": "lab_water",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          3
+        ]
+      ],
+      "id": "pt-lab-water-bay",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              1,
+              8.5
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              14
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 2,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              2,
+              "#629BC4"
+            ],
+            [
+              3,
+              "#6094BF"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(225,235,240,0.5)"
+            ],
+            [
+              3,
+              "rgba(206,228,242,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              3,
+              0.7
+            ],
+            [
+              5,
+              0.9
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_water",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          2
+        ],
+        [
+          "==",
+          "annotationclassid",
+          4
+        ],
+        [
+          "==",
+          "annotationclassid",
+          5
+        ]
+      ],
+      "id": "pt-lab-water-sea",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              1,
+              8.5
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              12
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 2.5,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              2,
+              "#639CC7"
+            ],
+            [
+              3,
+              "#6094BF"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(225,235,240,0.5)"
+            ],
+            [
+              3,
+              "rgba(206,228,242,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.7
+            ],
+            [
+              5,
+              0.9
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_water",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "annotationclassid",
+          0
+        ]
+      ],
+      "id": "pt-lab-water-ocean",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-optional": true,
+        "text-size": {
+          "stops": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              4,
+              22
+            ],
+            [
+              5,
+              24
+            ]
+          ]
+        }
+      },
+      "maxzoom": 6,
+      "minzoom": 0.56,
+      "paint": {
+        "text-color": {
+          "stops": [
+            [
+              2,
+              "#5F93BF"
+            ],
+            [
+              3,
+              "#629BC4"
+            ],
+            [
+              4,
+              "#6094BF"
+            ]
+          ]
+        },
+        "text-halo-color": {
+          "stops": [
+            [
+              2,
+              "rgba(225,235,240,0.5)"
+            ],
+            [
+              3,
+              "rgba(206,228,242,0.5)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "stops": [
+            [
+              2,
+              0.5
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "v",
+      "source-layer": "lab_water",
+      "type": "symbol"
+    }
+  ],
+  "metadata": {
+    "disclaimer": "The United Nations Clear Map (hereinafter &quot;Clear Map&quot;) is a background reference web mapping service produced to facilitate &quot;the issuance of any map at any duty station, including dissemination via public electronic networks such as Internet&quot; and &quot;to ensure that maps meet publication standards and that they are not in contravention of existing United Nations policies&quot; in accordance with the in the Administrative Instruction on &quot;Regulations for the Control and Limitation of Documentation - Guidelines for the Publication of Maps&quot; of 20 January 1997 (http://undocs.org/ST/AI/189/Add.25/Rev.1). Clear Map is created for the use of the United Nations Secretariat and community. All departments, offices and regional commissions of the United Nations Secretariat including offices away from Headquarters using Clear Map remain bound to the instructions as contained in the Administrative Instruction and should therefore seek clearance from the UN Geospatial Information Section (formerly Cartographic Section) prior to the issuance of their thematic maps using Clear Map as background reference."
+  },
+  "sources": {
+    "v": {
+      "attribution": "<a href='https://geoportal.un.org/arcgis/apps/sites/#/unitemaps'><img src='https://geoportal.un.org/webapps/resources/LOGOS/PoweredbyUniteMaps.png' alt='Powered by Unite Maps'></a> <a href='http://unopengis.org/unopengis/main/main.php'><img src='https://unopengis.github.io/watermark/watermark.png' alt='UN OpenGIS' style='width:40px;height:40px;'></a>",
+      "maxzoom": 5,
+      "minzoom": 0,
+      "tiles": [
+        "http://localhost:8836/zxy/clearmap-test/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "sprite": "http://localhost:8836/sprite_un/sprite_S",
+  "version": 8,
+  "zoom": 1
+}

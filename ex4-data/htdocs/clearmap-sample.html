@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Test- Clear Map Vector - test for practice</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='./mapbox-gl.js'></script>
+<link href='./mapbox-gl_r.css' rel='stylesheet' />
+
+<style>
+body { margin:0; padding:0; }
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+ 
+<div id='map'></div>
+
+<script>
+var map = new mapboxgl.Map({
+  container: 'map', 
+  attributionControl: true,
+  hash: true, 
+  //renderWorldCopies: false,
+  style: './clearmap-sample.json', // style file path
+  center: [0,0], // center [lng, lat]
+  zoom: 1, // zoom level at loading
+  maxZoom: 0, // min zoom
+  maxZoom: 6 // max zoom
+});
+
+
+//UI
+map.addControl(new mapboxgl.AttributionControl({customAttribution: "This is just for practice. The United Nations Clear Map (hereinafter &quot;Clear Map&quot;) is a background reference web mapping service produced to facilitate &quot;the issuance of any map at any duty station, including dissemination via public electronic networks such as Internet&quot; and &quot;to ensure that maps meet publication standards and that they are not in contravention of existing United Nations policies&quot; in accordance with the in the Administrative Instruction on &quot;Regulations for the Control and Limitation of Documentation - Guidelines for the Publication of Maps&quot; of 20 January 1997 (http://undocs.org/ST/AI/189/Add.25/Rev.1). Clear Map is created for the use of the United Nations Secretariat and community. All departments, offices and regional commissions of the United Nations Secretariat including offices away from Headquarters using Clear Map remain bound to the instructions as contained in the Administrative Instruction and should therefore seek clearance from the UN Geospatial Information Section (formerly Cartographic Section) prior to the issuance of their thematic maps using Clear Map as background reference." , compact: true}));
+map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+map.addControl(new mapboxgl.ScaleControl() );
+
+//debug
+map.showTileBoundaries = false;
+map.showCollisionBoxes = false;
+
+</script>
+ 
+</body>
+</html>
