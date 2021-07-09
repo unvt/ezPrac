@@ -13,7 +13,7 @@ const pgDbname = config.get('postgis.dbname')
 const pgHost = config.get('postgis.host')
 const pgPort = config.get('postgis.port')
 const pgUser = config.get('postgis.user')
-const pgPassword = config.get('postgis.host')
+const pgPassword = config.get('postgis.password')
 
 const tippecanoe = spawn(tippecanoePath, [
   `--output-to-directory=${dstDir}`,
