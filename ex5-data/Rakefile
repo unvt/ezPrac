@@ -1,0 +1,17 @@
+task :default do
+  require 'json'
+  sh "parse-hocon hocon/style.conf > htdocs/style.json"
+  style = JSON.parse(File.read('htdocs/style.json'))
+  File.write('htdocs/style.json', JSON.pretty_generate(style))
+  sh "gl-style-validate htdocs/style.json"
+end
+task :clearmap do
+  require 'json'
+  sh "parse-hocon hocon-clearmap/style.conf > htdocs/clearmap-style.json"
+  style = JSON.parse(File.read('htdocs/clearmap-style.json'))
+  File.write('htdocs/clearmap-style.json', JSON.pretty_generate(style))
+  sh "gl-style-validate htdocs/clearmap-style.json"
+end
+
+
+
