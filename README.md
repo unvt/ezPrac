@@ -38,6 +38,8 @@ Explaines how to display vector tile in QGIS (not limited to UNVT.)
 ###  日本語（作業中）/ UNVT Casual Exercise - Day 4
 スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-07-08-unvt-exercise-day04)
 
+###  日本語（作業中）/ UNVT Casual Exercise - Day 5
+スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-07-15-unvt-exercise-day05)
 
 ### その他作業中 / more will come
 
