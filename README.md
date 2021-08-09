@@ -44,6 +44,10 @@ Explaines how to display vector tile in QGIS (not limited to UNVT.)
 ###  日本語（作業中）/ UNVT additional Exercise - text font
 スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/2021-07-28-unvt-exercise-text-font)
 
+###  日本語（作業中）/ UNVT additional Exercise - TopoJSON
+スライド日本語（作業中）/ [Slide in English](https://speakerdeck.com/ubukawa/nanban-ec75120d-d82a-485c-8297-9c41987e14c5)
+
+
 ### その他作業中 / more will come
 
 
