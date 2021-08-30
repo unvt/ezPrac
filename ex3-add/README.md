@@ -4,8 +4,8 @@ production package for a postgis data base
 
 ## install
 ```console
-git clone https://github.com/unvt/ezPrac/ex3-add
-cd ex3-add
+git clone https://github.com/unvt/ezPrac
+cd ezPrac/ex3-add
 docker run -it --rm -v ${PWD}:/data unvt/nanban
 cd /data
 npm install
