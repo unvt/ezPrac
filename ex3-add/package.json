@@ -1,0 +1,31 @@
+{
+  "name": "ex3-add",
+  "version": "1.0.0",
+  "description": "produce small map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unvt/ezPrac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "dependencies": {
+    "@mapbox/geojson-area": "^0.2.2",
+    "@mapbox/tilebelt": "^1.0.1",
+    "better-queue": "^3.8.10",
+    "byline": "^5.0.0",
+    "cli-spinner": "^0.2.8",
+    "config": "^3.0.1",
+    "hh-mm-ss": "^1.2.0",
+    "hjson": "^3.1.2",
+    "json-text-sequence": "^0.1.1",
+    "pg": "^7.8.0",
+    "prettysize": "^2.0.0",
+    "winston": "^3.2.0",
+    "winston-daily-rotate-file": "^3.6.0"
+  }
+}

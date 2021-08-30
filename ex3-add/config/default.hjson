@@ -1,0 +1,31 @@
+{
+  Z: 0
+  relations: [
+   un_base::public::custom_planet_land_a_l08
+   un_base::public::unhq_phyp
+   un_base::public::unhq_popp
+   ]
+  mbtilesDir: mbtiles
+  mbtilesName: yourVT
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    osm_id
+  ]
+  host: localhost
+  concurrent: 1
+  port: 5432
+  dbUser: username
+  dbPassword: password
+  wtpsThreshold: 50
+  monitorPeriod: 10
+  concurrentS: 1
+  maxRetries: 5
+  retryDelay: 5000
+  logDir: log
+  defaultDate: 2021-08-01
+  spinnerString: 18
+  fetchSize: 300
+  tippecanoePath: /usr/local/bin/tippecanoe
+}
